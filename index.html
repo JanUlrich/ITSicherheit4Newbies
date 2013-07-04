@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - Presentation Template</title>
+		<title>Präsentation: IT-Sicherheit für Newbies</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -33,7 +33,7 @@
 
 		.reveal section img {
 			width: 100%;
-			height: 100%
+			height: 100%;
 		}
 
 		div.headR {
@@ -145,18 +145,18 @@
 
 <div class="staticElements">
 	<div class="headR">
-	<img src="img/dh-Logo.png"></img>
+	<!--<img src="img/dh-Logo.png"></img>-->
 	</div>
 	<div class="headL">
-	<img src="img/rheadLogo.png"></img>
+	<!--<img src="img/rheadLogo.png"></img>-->
 	</div>
 	
 	
-	<div class="headC"><div class="slide-chapter">test</div></div>
-	<div class="footC"><div class="slide-title">test</div></div>
+	<div class="headC"><div class="slide-chapter">Activate Javascript!</div></div>
+	<div class="footC"><div class="slide-title">Activate Javascript!</div></div>
 	
 	<div class="footL">
-	<footnote>JanUlrich</footnote>
+	<footnote><a href="#/1">->Inhaltsverzeichnis</a></footnote>
 	</div>
 	<div class="footR">
 	<footnote>Folie <text class="slide-number"></text></footnote>
@@ -170,13 +170,11 @@
 <!-- Titelblatt -->
 <section data-markdown data-separator="!---" data-vertical="u---" class="titlePage">
 <script type="text/template">
-# TITLE OF PRESENTATION #
+# IT Security #
 
 -----
 
-#### Subtitle: ####
-
-### Theme by JanUlrich  ###
+##### by Andi  #####
 
 -----
 
@@ -186,59 +184,173 @@
 
 <section data-markdown data-separator="!---" data-vertical="u---">
 <script type="text/template">
-
-## Things I hate ##
-* Lists
-* Irony
-* Bad copys of gags from [the internet](http://2.media.collegehumor.cvcdn.com/18/18/c1cfb25db8ba4a27f5086776c144659f-ironic-list-of-things-i-hate-written-on-a-wall.jpg)
-
-!---
-
-## NumberedList
-1. 00
-2. 01
-3. 10
-4. 11
+## Themen ##
+* [Fun-Facts](#/2)
+* [Passwort](#/3)
+* [E-Mail](#/4)
+* [Windows](#/5)
+* [Surfen im Netz](#/6)
 
 !---
 
-## sloqɯʎs ǝƃuɐɹʇs ##
-### some text ###
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit
-
-</script>
-</section>
-
-<section data-markdown data-separator="!----" data-vertical="u----">
-<script type="text/template">
-
-## "The Headline" ##
-* Press Down-Arrow!
-* "The Headline" will stay on top!
-
-u----
-
-### Written in Markdown ###
-* slide-seperator:
-
-    `# Title 1. Slide # !--- # Title 2. Slide #`
-
-* vertical slide-seperator:
-
-    `# Slide 1 # u--- # Slide under "Slide 1" #`
-</script>
-</section>
-
-<section data-markdown data-separator="!---" data-vertical="u---">
-<script type="text/template">
-## Image ##
-![Testimage][1]
-
-  [1]: img/test.gif
+## Fun-Facts ##
+* 100 % Sicherheit nicht möglich
+* Paranoia -> Sicherheit
+* Das beste Antivirenprogramm: [brain.exe](http://brain.yubb.de/)
 
 !---
-## Tooltip ##
-* Now with Comments to Elements <comment>which get shown in a tooltip</comment>
+
+![Let's Go][2]
+
+
+  [2]: img/ITSec4Dummies/password_title.jpg
+
+
+
+## Passwörter ##
+u---
+
+* Allgemeines:
+	* Beispiele für schwache Passwörter: "123456", "passwort", "sommer"
+	* Keine Standardpasswörter verwenden 
+	* Sicheres Passwort generieren beispielsweise mittels [Diceware](http://rumkin.com/tools/password/diceware.php)
+	* Passwörter nicht doppelt verwenden!   
+	Beispiel "Masterpasswort": Ein einziges Passwort wird für sämtliche Authentisierungen verwendet
+	* Passwörter nicht (unverschlüsselt) auf Computer speichern oder an Computerbildschirm kleben
+
+u---
+
+### Kein Passwort doppelt verwenden! ###
+* Ein Passwort gerät leicht in falsche Hände:
+	* z.B. durch: "Phishing", "Man in the middle", "Keylogger" oder **durch Kompromittierung von Online-Diensten:**
+		* Oft gelingt es Angreifern, massenhaft Benutzerdaten (auch deren Passwörter) von Online-Dienstanbietern zu stehlen    
+		* Geschieht auch bei scheinbar seriösen/sicheren Anbietern. Zum Beispiel [GMX](http://heise.de/-1637510), [Riot](http://heise.de/-1615492), [Blizzard](http://heise.de/-1664645), [Ubisoft](http://heise.de/-1910203), [Dropbox](http://heise.de/-1656798)
+		* Angreifer hat anschließend Zugriff auf alle mit dem selben Passwort gesicherten Systeme, sofern diese (wie meistens üblich) mit der selben E-Mail-Adresse verknüpft sind.
+* Passwörter aufzuschreiben und sicher zu verwahren ist generell sicherer, als sich wenige unsichere Passwörter zu merken (und diese doppelt zu verwenden)
+
+u---
+
+### Tipps zur Aufbewahrung ###
+* Verschlüsselt auf Datenträger speichern (mit beispielsweise [Truecrypt](http://www.truecrypt.org/) oder [keepass](http://keepass.info/download.html) )
+* Aufschreiben und **SICHER** verwahren
+
+
+	"Simply, people can no longer remember passwords good enough
+	to reliably defend against dictionary attacks,
+	and are much more secure if they choose a password too complicated to remember
+	and then write it down.
+	We're all good at securing small pieces of paper.
+	I recommend that people write their passwords down on a small piece of paper,
+	and keep it with their other valuable small pieces of paper: in their wallet."
+	—Bruce Schneier, 2005
+
+* **Vorsicht:**
+	* Zettel mit PIN **NICHT** im selben Geldbeutel wie Geldkarte aufbewahren!
+	* **NICHT** als Postit an Computerbildschirm!
+
+u---
+### Passwortstärke ###
+
+![Your Password Sucks!][2]
+
+
+  [2]: img/ITSec4Dummies/password_strength.png
+
+
+!---
+
+![email][3]
+
+
+  [3]: img/ITSec4Dummies/email.jpg
+
+
+## E-Mail ##
+
+u---
+### Abmahn-Mails ###
+* E-Mail nie "rechtskräftig"! <comment>Im Zweifelsfalls kann immer behauptet werden, die Mail wäre nicht angekommen</comment>
+	* ergo: Mails die Wörter wie ["Abmahnung", "Zahlungsaufforderung", "Mahngebühr", etc...] enthalten sind SPAM!
+* Gefälschte Absenderadressen
+	* Absender kein sicheres Kriterium
+* Trügerische Links in (Spam)-E-Mails:
+	* Links führen nicht zwangsläufig zur angezeigten Seite: [www.beispiel.de](https://gist.github.com/anonymous/9cccb8f8a60be3eaea5c#file-gistfile1-md)
+	* Anklicken von Links verifiziert den Erhalt der E-Mail gegenüber Spam-Versender: Anschließend folgt noch mehr Spam
+
+u---
+### Phishing ###
+
+* (Google-)Suche zur Kontrolle der Richtigkeit einer Meldung:
+
+
+	<Name der Anwendung> email <Kurzbeschreibung aufgeforderte Tätigkeit>
+	Beispiel:
+	League of Legends email Passwort ändern
+
+* Keine Links in E-Mails nutzen, sondern manuell auf die offizielle Seite navigieren
+
+u---
+### Generell gilt ###
+#### für E-Mails mit unbekanntem Absender <comment>Hinweis: "service@email-gmx.to" ist beispielsweise kein bekannter Absender</comment> ####
+* Keine Anhänge öffnen!
+* Keine Links anklicken!
+* Keine Bilder anzeigen/nachladen!
+* Keine Zahlungen leisten! (im Falle einer "E-Mail Abmahnung")
+
+u---
+### Weitere Tipps ###
+* Nur Textmails anzeigen (HTML-Mail = GAYYYY)
+* PGP-Verschlüsselung (Privatsphäre bei E-Mails ist mit der einer Postkarte vergleichbar)
+* Versand und Empfang von Microsoft-Word-Dokumenten ablehnen :) (PDF tut's auch)
+
+!---
+
+## Sicher unter Windows ##
+![newisalwaysbetter][4]
+
+  [4]: ./img/ITSec4Dummies/newisalwaysbetter.gif
+
+(Daher Windows- und Software-Updates regelmäßig durchführen)
+
+u---
+* Antivirenprogramm installieren (Vorsicht: Wirkung wird oft überschätzt)
+* Je weniger Software auf einem System desto:
+	+ weniger Sicherheitslücken
+	+ weniger Softwareaktualisierungen nötig
+	+ schneller der Bootvorgang
+* Software nur von seriösen Quellen beziehen, wie:
+	* Gekaufte Software (Installations-CDs)
+	* Websiten mit gültigem SSL-Zertifikat (Grünes Symbol in der Adressleiste des Browsers)
+	* **Keine** über Online-Speicher ("Mega", "Torrent") geteilten "Cracks", "Hack-Tools" oder ähnliches ausführen
+* Keine unbekannten USB-Sticks einstecken!
+* Unbekannte Dateien **NIE** öffnen! Im Zweifelsfall in einer [Sandbox](http://www.sandboxie.com/) und/oder vorherigem [Virustotal-Check](https://www.virustotal.com/en/).
+
+!---
+
+
+
+## How to: Internet ##
+
+u---
+### &lt;a href="Böse"&gt;Links&lt;/a&gt; ###
+* Keine "dubiosen" Links anklicken
+* Hinter gekürzten Links kann sich generell alles befinden
+* Links mittels [Virustotal](https://www.virustotal.com/en/#url) prüfen
+u---
+### Internet-Browser ###
+* "New is always better" - Gilt sowohl für Browser als auch für dessen Plugins! ([Firefox Plugin-Test](https://www.mozilla.org/en-US/plugincheck/))
+* Alle unnötigen Plugins (**ALLES** außer "Adobe Flash Player") deaktivieren.
+* Keinen Internet-Explorer nutzen :P (vor allem keine veraltet Version)
+* Addons-Empfehlungen:
+	* [HTTPS-Everywhere](https://www.eff.org/https-everywhere)
+	* Ad-block
+	* Flashblock ([Google-Chrome](https://chrome.google.com/webstore/detail/flashblock/gofhjkjmkpinhpoiabjplobcaignabnl), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/flashblock/))
+u---
+### MITM ###
+* Vorsicht in öffentlichen W-Lans:
+	* Nach Möglichkeit nur Websites mittels https aufrufen
+	* In Facebook "sicheres Durchstöbern" aktivieren
+	* E-Mails über verschlüsselte Verbindung abrufen
 
 </script>
 </section>
@@ -254,6 +366,17 @@ u----
 		<script src="js/jquery-ui.js"></script>
 		 
 		<script>
+		/*
+		$(function() {
+		    $(window).resize(function() {
+		        var $i = $('img');
+		        var $c = $img.parent();
+		        var i_ar = $i.width() / $i.height(), c_ar = $c.width() / $c.height();            
+		        $i.width(i_ar > c_ar ? $c.width() : $c.height() * (i_ar));
+		    });
+		    $(window).resize();
+		});
+		*/
 		$(".staticElements").hide();
 		
 		Reveal.addEventListener( 'ready', function( event ) {
@@ -302,7 +425,7 @@ u----
 				center: true,
 
 				width: 1300,
-			    height: 900,
+			    height: 1100,
 			    margin: 0.15,
 			    
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
